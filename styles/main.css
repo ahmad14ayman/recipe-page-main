@@ -1,0 +1,186 @@
+:root {
+    /* Width */
+    --mobile-width: 375px;
+    --desktop-width: 1440px;
+    /* Colors */
+    --White: hsl(0, 0%, 100%);
+    --Rose-White: hsl(330, 100%, 98%);
+    --Eggshell: hsl(30, 54%, 90%);
+    --Light-Grey: hsl(30, 18%, 87%);
+    --Wenge-Brown: hsl(30, 10%, 34%);
+    --Dark-Charcoal: hsl(24, 5%, 18%);
+    --Font-size-Paragraph: 16px;
+    /* border */
+    --rad-10: 10px;
+    /* padding */
+    --main-padd: 20px;
+}
+
+@font-face {
+    font-family: 'yeng-serif';
+    src: url(../assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'outfit';
+    src: url(../assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--Eggshell);
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 50%;
+    margin: 30px auto 0;
+    font-family: 'outfit';
+}
+
+.container .card {
+    padding: var(--main-padd);
+}
+
+.omelette-image {
+    max-width: 100%;
+    border-radius: var(--rad-10);
+}
+
+.text {
+    padding: 0 var(--main-padd);
+}
+
+h1 {
+    font-family: 'yeng-serif';
+}
+
+ul,
+ol {
+    padding-left: var(--main-padd);
+}
+
+li {
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+li:not(:first-child) {
+    padding-top: 10px;
+}
+
+.preparation-t li::marker {
+    color: rgb(117, 44, 73);
+}
+
+.ingredients li::marker {
+    color: #7c4732;
+}
+
+.instructions li::marker {
+    font-weight: bold;
+    color: #7c4732;
+}
+
+.ingredients,
+.instructions,
+.nutrition {
+    padding: 10px 0;
+}
+
+.ingredients,
+.instructions {
+    border-bottom: 1px solid #ddd;
+}
+
+.details {
+    padding: 15px;
+}
+
+.details:not(:last-of-type) {
+    border-bottom: 1px solid #ddd;
+}
+
+.details>span:first-child {
+    margin-left: 10px;
+    display: inline-block;
+    width: 60px;
+}
+
+.details>span:last-child {
+    margin-left: 30%;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    padding: 20px;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+@media (max-width:767px) {
+    .container {
+        width: 100%;
+        margin: 0;
+        border-radius: 0 !important;
+    }
+}
+
+/* FrameWork */
+.pad-20 {
+    padding: 20px;
+}
+
+.bg-rose {
+    background-color: var(--Rose-White);
+}
+
+.bg-main {
+    background-color: var(--Eggshell);
+}
+
+.bg-white {
+    background-color: white;
+}
+
+.rad-10 {
+    border-radius: 10px;
+}
+
+.fs-16 {
+    font-size: 16px;
+}
+
+.c-prep {
+    color: rgb(117, 44, 73);
+}
+
+.c-brown {
+    color: var(--Wenge-Brown);
+}
+
+.c-bbrown {
+    color: #7c4732;
+}
+
+.f-bold {
+    font-weight: bold;
+}
+
+.fm-yeng {
+    font-family: 'yeng-serif';
+}
+
+.between-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
